@@ -1,0 +1,2111 @@
+[
+  {
+    "id": "Q001",
+    "title": "過去に反応したが現在は意味を失ったライン",
+    "chartData": {
+      "type": "trend",
+      "line": {
+        "price": 60,
+        "touches": 2
+      },
+      "priceAction": [
+        { "high": 65, "low": 55, "open": 58, "close": 62 },
+        { "high": 70, "low": 60, "open": 62, "close": 68 },
+        { "high": 75, "low": 65, "open": 68, "close": 73 },
+        { "high": 78, "low": 70, "open": 73, "close": 76 },
+        { "high": 80, "low": 72, "open": 76, "close": 79 },
+        { "high": 82, "low": 75, "open": 79, "close": 81 },
+        { "high": 85, "low": 78, "open": 81, "close": 84 },
+        { "high": 88, "low": 80, "open": 84, "close": 87 }
+      ]
+    },
+    "flow": {
+      "line": {
+        "question": "ライン有効？",
+        "correctAnswer": "no"
+      },
+      "nowcast": {
+        "question": "ナウキャストは？",
+        "options": ["Trend", "Range", "Transition"],
+        "correctAnswer": "Trend"
+      },
+      "scenario": {
+        "question": "シナリオ成立？",
+        "correctAnswer": "no"
+      },
+      "timing": {
+        "question": "タイミング来てる？",
+        "correctAnswer": "no"
+      },
+      "conclusion": {
+        "question": "結論は？",
+        "correctAnswer": "skip"
+      }
+    },
+    "explanation": {
+      "line": "価格は過去に何度も反応した水平ライン付近にあるが、直近は勢いが強く戻りも浅い。強いトレンド中では過去の反応は機能しにくい。",
+      "nowcast": "上昇トレンドが継続している。",
+      "overall": "最初にラインの有効性を否定できるかが分岐点。過去の反応回数だけでラインを信じるのは誤り。戻りの浅さが継続を示している。"
+    }
+  },
+  {
+    "id": "Q002",
+    "title": "レンジに見えるが移行期の相場",
+    "chartData": {
+      "type": "transition",
+      "line": {
+        "price": 60,
+        "touches": 3
+      },
+      "priceAction": [
+        { "high": 70, "low": 50, "open": 65, "close": 55 },
+        { "high": 68, "low": 48, "open": 55, "close": 52 },
+        { "high": 65, "low": 45, "open": 52, "close": 58 },
+        { "high": 63, "low": 47, "open": 58, "close": 50 },
+        { "high": 62, "low": 46, "open": 50, "close": 56 },
+        { "high": 61, "low": 48, "open": 56, "close": 51 },
+        { "high": 60, "low": 49, "open": 51, "close": 54 },
+        { "high": 59, "low": 50, "open": 54, "close": 52 }
+      ]
+    },
+    "flow": {
+      "line": {
+        "question": "ライン有効？",
+        "correctAnswer": "yes"
+      },
+      "nowcast": {
+        "question": "ナウキャストは？",
+        "options": ["Trend", "Range", "Transition"],
+        "correctAnswer": "Transition"
+      },
+      "scenario": {
+        "question": "シナリオ成立？",
+        "correctAnswer": "no"
+      },
+      "timing": {
+        "question": "タイミング来てる？",
+        "correctAnswer": "no"
+      },
+      "conclusion": {
+        "question": "結論は？",
+        "correctAnswer": "skip"
+      }
+    },
+    "explanation": {
+      "line": "ラインは有効。",
+      "nowcast": "高値と安値を切り下げつつ、値幅が徐々に縮小している。値幅縮小はエネルギー溜め。上下どちらも未確定。",
+      "overall": "ナウキャストを誤ると戦略自体がズレる。レンジと決めつけて逆張りするのは誤り。"
+    }
+  },
+  {
+    "id": "Q003",
+    "title": "想定シナリオが一つしかない",
+    "flow": {
+      "line": {
+        "question": "ライン有効？",
+        "correctAnswer": "yes"
+      },
+      "nowcast": {
+        "question": "ナウキャストは？",
+        "options": ["Trend", "Range", "Transition"],
+        "correctAnswer": "Trend"
+      },
+      "scenario": {
+        "question": "シナリオ成立？",
+        "correctAnswer": "no"
+      },
+      "timing": {
+        "question": "タイミング来てる？",
+        "correctAnswer": "no"
+      },
+      "conclusion": {
+        "question": "結論は？",
+        "correctAnswer": "skip"
+      }
+    },
+    "explanation": {
+      "line": "ラインは有効。",
+      "nowcast": "トレンドが継続している。",
+      "scenario": "上昇シナリオのみ想定しており、否定条件を考えていない。否定条件がない＝逃げ場がない。",
+      "overall": "シナリオが一つの時点でトレード不可。伸びそうという感覚だけで入るのは誤り。"
+    }
+  },
+  {
+    "id": "Q004",
+    "title": "条件は揃っているが足が確定していない",
+    "flow": {
+      "line": {
+        "question": "ライン有効？",
+        "correctAnswer": "yes"
+      },
+      "nowcast": {
+        "question": "ナウキャストは？",
+        "options": ["Trend", "Range", "Transition"],
+        "correctAnswer": "Trend"
+      },
+      "scenario": {
+        "question": "シナリオ成立？",
+        "correctAnswer": "yes"
+      },
+      "timing": {
+        "question": "タイミング来てる？",
+        "correctAnswer": "no"
+      },
+      "conclusion": {
+        "question": "結論は？",
+        "correctAnswer": "skip"
+      }
+    },
+    "explanation": {
+      "line": "ラインは有効。",
+      "nowcast": "トレンドが継続している。",
+      "scenario": "シナリオは成立している。",
+      "timing": "全条件が揃っているように見えるが、エントリー足は未確定。未確定足は情報が変わる。",
+      "overall": "タイミングは最後に確認する。確定を待てずに早入りするのは誤り。"
+    }
+  },
+  {
+    "id": "Q005",
+    "title": "ラインが多すぎて意味を失っている",
+    "flow": {
+      "line": {
+        "question": "ライン有効？",
+        "correctAnswer": "no"
+      },
+      "nowcast": {
+        "question": "ナウキャストは？",
+        "options": ["Trend", "Range", "Transition"],
+        "correctAnswer": "Transition"
+      },
+      "scenario": {
+        "question": "シナリオ成立？",
+        "correctAnswer": "no"
+      },
+      "timing": {
+        "question": "タイミング来てる？",
+        "correctAnswer": "no"
+      },
+      "conclusion": {
+        "question": "結論は？",
+        "correctAnswer": "skip"
+      }
+    },
+    "explanation": {
+      "line": "複数のラインが密集しており、どこが反応点かわからない。反応点が曖昧。後付けラインになっている。",
+      "nowcast": "方向性が定まっていない。",
+      "overall": "ラインが機能していない時点で判断不可。引いたラインのどれかに期待するのは誤り。"
+    }
+  },
+  {
+    "id": "Q006",
+    "title": "ラインは有効だがトレンドが弱い",
+    "flow": {
+      "line": {
+        "question": "ライン有効？",
+        "correctAnswer": "yes"
+      },
+      "nowcast": {
+        "question": "ナウキャストは？",
+        "options": ["Trend", "Range", "Transition"],
+        "correctAnswer": "Range"
+      },
+      "scenario": {
+        "question": "シナリオ成立？",
+        "correctAnswer": "no"
+      },
+      "timing": {
+        "question": "タイミング来てる？",
+        "correctAnswer": "no"
+      },
+      "conclusion": {
+        "question": "結論は？",
+        "correctAnswer": "skip"
+      }
+    },
+    "explanation": {
+      "line": "価格が3回以上タッチしているため有効。",
+      "nowcast": "レンジ相場が継続している。",
+      "scenario": "シナリオが成立していない。",
+      "overall": "ラインは有効だが、シナリオが成立していないためスキップ。"
+    }
+  },
+  {
+    "id": "Q007",
+    "title": "すべての条件が揃った完璧なエントリー",
+    "flow": {
+      "line": {
+        "question": "ライン有効？",
+        "correctAnswer": "yes"
+      },
+      "nowcast": {
+        "question": "ナウキャストは？",
+        "options": ["Trend", "Range", "Transition"],
+        "correctAnswer": "Trend"
+      },
+      "scenario": {
+        "question": "シナリオ成立？",
+        "correctAnswer": "yes"
+      },
+      "timing": {
+        "question": "タイミング来てる？",
+        "correctAnswer": "yes"
+      },
+      "conclusion": {
+        "question": "結論は？",
+        "correctAnswer": "entry"
+      }
+    },
+    "explanation": {
+      "line": "価格が3回以上タッチしているため有効。",
+      "nowcast": "上昇トレンドが継続している。",
+      "scenario": "上昇シナリオが成立している。",
+      "timing": "ライン付近で反発し、エントリー足も確定している。",
+      "conclusion": "すべての条件を満たしているためエントリー。",
+      "overall": "ライン有効→トレンド継続→シナリオ成立→タイミング良好の順で判断。すべてのステップを通過した。"
+    }
+  },
+  {
+    "id": "Q008",
+    "title": "ラインは有効だが転換期",
+    "flow": {
+      "line": {
+        "question": "ライン有効？",
+        "correctAnswer": "yes"
+      },
+      "nowcast": {
+        "question": "ナウキャストは？",
+        "options": ["Trend", "Range", "Transition"],
+        "correctAnswer": "Transition"
+      },
+      "scenario": {
+        "question": "シナリオ成立？",
+        "correctAnswer": "no"
+      },
+      "timing": {
+        "question": "タイミング来てる？",
+        "correctAnswer": "no"
+      },
+      "conclusion": {
+        "question": "結論は？",
+        "correctAnswer": "skip"
+      }
+    },
+    "explanation": {
+      "line": "価格が3回以上タッチしているため有効。",
+      "nowcast": "転換期で方向性が定まっていない。",
+      "overall": "ラインは有効だが転換期のためスキップ。方向性が定まってから判断する。"
+    }
+  },
+  {
+    "id": "Q009",
+    "title": "ラインが1回しかタッチしていない",
+    "flow": {
+      "line": {
+        "question": "ライン有効？",
+        "correctAnswer": "no"
+      },
+      "nowcast": {
+        "question": "ナウキャストは？",
+        "options": ["Trend", "Range", "Transition"],
+        "correctAnswer": "Trend"
+      },
+      "scenario": {
+        "question": "シナリオ成立？",
+        "correctAnswer": "no"
+      },
+      "timing": {
+        "question": "タイミング来てる？",
+        "correctAnswer": "no"
+      },
+      "conclusion": {
+        "question": "結論は？",
+        "correctAnswer": "skip"
+      }
+    },
+    "explanation": {
+      "line": "価格が1回しかタッチしていないため無効。3回以上タッチが必要。",
+      "overall": "ラインが無効なため判断を中止。エントリーしない。"
+    }
+  },
+  {
+    "id": "Q010",
+    "title": "シナリオは成立しているがタイミングが悪い",
+    "flow": {
+      "line": {
+        "question": "ライン有効？",
+        "correctAnswer": "yes"
+      },
+      "nowcast": {
+        "question": "ナウキャストは？",
+        "options": ["Trend", "Range", "Transition"],
+        "correctAnswer": "Trend"
+      },
+      "scenario": {
+        "question": "シナリオ成立？",
+        "correctAnswer": "yes"
+      },
+      "timing": {
+        "question": "タイミング来てる？",
+        "correctAnswer": "no"
+      },
+      "conclusion": {
+        "question": "結論は？",
+        "correctAnswer": "skip"
+      }
+    },
+    "explanation": {
+      "line": "価格が3回以上タッチしているため有効。",
+      "nowcast": "上昇トレンドが継続している。",
+      "scenario": "上昇シナリオが成立している。",
+      "timing": "ラインから離れすぎている。タイミングが悪い。",
+      "overall": "ライン・ナウキャスト・シナリオは良好だがタイミング待ち。"
+    }
+  },
+  {
+    "id": "Q011",
+    "title": "レンジブレイクのシナリオが成立",
+    "flow": {
+      "line": {
+        "question": "ライン有効？",
+        "correctAnswer": "yes"
+      },
+      "nowcast": {
+        "question": "ナウキャストは？",
+        "options": ["Trend", "Range", "Transition"],
+        "correctAnswer": "Range"
+      },
+      "scenario": {
+        "question": "シナリオ成立？",
+        "correctAnswer": "yes"
+      },
+      "timing": {
+        "question": "タイミング来てる？",
+        "correctAnswer": "yes"
+      },
+      "conclusion": {
+        "question": "結論は？",
+        "correctAnswer": "entry"
+      }
+    },
+    "explanation": {
+      "line": "価格が3回以上タッチしているため有効。",
+      "nowcast": "レンジ相場が継続している。",
+      "scenario": "レンジブレイクシナリオが成立している。",
+      "timing": "ブレイクポイント付近でタイミング良好。",
+      "conclusion": "すべての条件を満たしているためエントリー。",
+      "overall": "ライン有効→レンジ継続→シナリオ成立→タイミング良好の順で判断。"
+    }
+  },
+  {
+    "id": "Q012",
+    "title": "ラインは有効だがシナリオが不明確",
+    "flow": {
+      "line": {
+        "question": "ライン有効？",
+        "correctAnswer": "yes"
+      },
+      "nowcast": {
+        "question": "ナウキャストは？",
+        "options": ["Trend", "Range", "Transition"],
+        "correctAnswer": "Trend"
+      },
+      "scenario": {
+        "question": "シナリオ成立？",
+        "correctAnswer": "no"
+      },
+      "timing": {
+        "question": "タイミング来てる？",
+        "correctAnswer": "no"
+      },
+      "conclusion": {
+        "question": "結論は？",
+        "correctAnswer": "skip"
+      }
+    },
+    "explanation": {
+      "line": "価格が3回以上タッチしているため有効。",
+      "nowcast": "上昇トレンドが継続している。",
+      "scenario": "シナリオが不明確。否定条件が考えられない。",
+      "overall": "ライン・ナウキャストは良好だがシナリオが成立していないためスキップ。"
+    }
+  },
+  {
+    "id": "Q013",
+    "title": "下降トレンドでの完璧なエントリー",
+    "flow": {
+      "line": {
+        "question": "ライン有効？",
+        "correctAnswer": "yes"
+      },
+      "nowcast": {
+        "question": "ナウキャストは？",
+        "options": ["Trend", "Range", "Transition"],
+        "correctAnswer": "Trend"
+      },
+      "scenario": {
+        "question": "シナリオ成立？",
+        "correctAnswer": "yes"
+      },
+      "timing": {
+        "question": "タイミング来てる？",
+        "correctAnswer": "yes"
+      },
+      "conclusion": {
+        "question": "結論は？",
+        "correctAnswer": "entry"
+      }
+    },
+    "explanation": {
+      "line": "価格が3回以上タッチしているため有効。",
+      "nowcast": "下降トレンドが継続している。",
+      "scenario": "下降シナリオが成立している。",
+      "timing": "ライン付近で反発し、エントリー足も確定している。",
+      "conclusion": "すべての条件を満たしているためエントリー。",
+      "overall": "ライン有効→トレンド継続→シナリオ成立→タイミング良好の順で判断。"
+    }
+  },
+  {
+    "id": "Q014",
+    "title": "ラインが2回しかタッチしていない",
+    "flow": {
+      "line": {
+        "question": "ライン有効？",
+        "correctAnswer": "no"
+      },
+      "nowcast": {
+        "question": "ナウキャストは？",
+        "options": ["Trend", "Range", "Transition"],
+        "correctAnswer": "Range"
+      },
+      "scenario": {
+        "question": "シナリオ成立？",
+        "correctAnswer": "no"
+      },
+      "timing": {
+        "question": "タイミング来てる？",
+        "correctAnswer": "no"
+      },
+      "conclusion": {
+        "question": "結論は？",
+        "correctAnswer": "skip"
+      }
+    },
+    "explanation": {
+      "line": "価格が2回しかタッチしていないため無効。3回以上タッチが必要。",
+      "overall": "ラインが無効なため判断を中止。エントリーしない。"
+    }
+  },
+  {
+    "id": "Q015",
+    "title": "転換期でシナリオが成立しない",
+    "flow": {
+      "line": {
+        "question": "ライン有効？",
+        "correctAnswer": "yes"
+      },
+      "nowcast": {
+        "question": "ナウキャストは？",
+        "options": ["Trend", "Range", "Transition"],
+        "correctAnswer": "Transition"
+      },
+      "scenario": {
+        "question": "シナリオ成立？",
+        "correctAnswer": "no"
+      },
+      "timing": {
+        "question": "タイミング来てる？",
+        "correctAnswer": "no"
+      },
+      "conclusion": {
+        "question": "結論は？",
+        "correctAnswer": "skip"
+      }
+    },
+    "explanation": {
+      "line": "価格が3回以上タッチしているため有効。",
+      "nowcast": "転換期で方向性が定まっていない。",
+      "scenario": "方向性が定まっていないためシナリオが成立しない。",
+      "overall": "転換期のためスキップ。方向性が定まってから判断する。"
+    }
+  },
+  {
+    "id": "Q016",
+    "title": "レンジ相場での完璧なエントリー",
+    "flow": {
+      "line": {
+        "question": "ライン有効？",
+        "correctAnswer": "yes"
+      },
+      "nowcast": {
+        "question": "ナウキャストは？",
+        "options": ["Trend", "Range", "Transition"],
+        "correctAnswer": "Range"
+      },
+      "scenario": {
+        "question": "シナリオ成立？",
+        "correctAnswer": "yes"
+      },
+      "timing": {
+        "question": "タイミング来てる？",
+        "correctAnswer": "yes"
+      },
+      "conclusion": {
+        "question": "結論は？",
+        "correctAnswer": "entry"
+      }
+    },
+    "explanation": {
+      "line": "価格が3回以上タッチしているため有効。",
+      "nowcast": "レンジ相場が継続している。",
+      "scenario": "レンジ内での反発シナリオが成立している。",
+      "timing": "レンジ下限付近で反発し、タイミング良好。",
+      "conclusion": "すべての条件を満たしているためエントリー。",
+      "overall": "ライン有効→レンジ継続→シナリオ成立→タイミング良好の順で判断。"
+    }
+  },
+  {
+    "id": "Q017",
+    "title": "ラインは有効だがナウキャストが不明確",
+    "flow": {
+      "line": {
+        "question": "ライン有効？",
+        "correctAnswer": "yes"
+      },
+      "nowcast": {
+        "question": "ナウキャストは？",
+        "options": ["Trend", "Range", "Transition"],
+        "correctAnswer": "Transition"
+      },
+      "scenario": {
+        "question": "シナリオ成立？",
+        "correctAnswer": "no"
+      },
+      "timing": {
+        "question": "タイミング来てる？",
+        "correctAnswer": "no"
+      },
+      "conclusion": {
+        "question": "結論は？",
+        "correctAnswer": "skip"
+      }
+    },
+    "explanation": {
+      "line": "価格が3回以上タッチしているため有効。",
+      "nowcast": "転換期で方向性が定まっていない。",
+      "overall": "ラインは有効だが転換期のためスキップ。方向性が定まってから判断する。"
+    }
+  },
+  {
+    "id": "Q018",
+    "title": "すべての条件が揃った上昇トレンドエントリー",
+    "flow": {
+      "line": {
+        "question": "ライン有効？",
+        "correctAnswer": "yes"
+      },
+      "nowcast": {
+        "question": "ナウキャストは？",
+        "options": ["Trend", "Range", "Transition"],
+        "correctAnswer": "Trend"
+      },
+      "scenario": {
+        "question": "シナリオ成立？",
+        "correctAnswer": "yes"
+      },
+      "timing": {
+        "question": "タイミング来てる？",
+        "correctAnswer": "yes"
+      },
+      "conclusion": {
+        "question": "結論は？",
+        "correctAnswer": "entry"
+      }
+    },
+    "explanation": {
+      "line": "価格が3回以上タッチしているため有効。",
+      "nowcast": "上昇トレンドが継続している。",
+      "scenario": "上昇シナリオが成立している。",
+      "timing": "ライン付近で反発し、エントリー足も確定している。",
+      "conclusion": "すべての条件を満たしているためエントリー。",
+      "overall": "ライン有効→トレンド継続→シナリオ成立→タイミング良好の順で判断。すべてのステップを通過した。"
+    }
+  },
+  {
+    "id": "Q019",
+    "title": "ラインは有効だがタイミングが悪い",
+    "flow": {
+      "line": {
+        "question": "ライン有効？",
+        "correctAnswer": "yes"
+      },
+      "nowcast": {
+        "question": "ナウキャストは？",
+        "options": ["Trend", "Range", "Transition"],
+        "correctAnswer": "Trend"
+      },
+      "scenario": {
+        "question": "シナリオ成立？",
+        "correctAnswer": "yes"
+      },
+      "timing": {
+        "question": "タイミング来てる？",
+        "correctAnswer": "no"
+      },
+      "conclusion": {
+        "question": "結論は？",
+        "correctAnswer": "skip"
+      }
+    },
+    "explanation": {
+      "line": "価格が3回以上タッチしているため有効。",
+      "nowcast": "上昇トレンドが継続している。",
+      "scenario": "上昇シナリオが成立している。",
+      "timing": "ラインから離れすぎている。タイミングが悪い。",
+      "overall": "ライン・ナウキャスト・シナリオは良好だがタイミング待ち。"
+    }
+  },
+  {
+    "id": "Q020",
+    "title": "ラインが機能していない相場",
+    "flow": {
+      "line": {
+        "question": "ライン有効？",
+        "correctAnswer": "no"
+      },
+      "nowcast": {
+        "question": "ナウキャストは？",
+        "options": ["Trend", "Range", "Transition"],
+        "correctAnswer": "Transition"
+      },
+      "scenario": {
+        "question": "シナリオ成立？",
+        "correctAnswer": "no"
+      },
+      "timing": {
+        "question": "タイミング来てる？",
+        "correctAnswer": "no"
+      },
+      "conclusion": {
+        "question": "結論は？",
+        "correctAnswer": "skip"
+      }
+    },
+    "explanation": {
+      "line": "ラインが機能していない。反応点が曖昧。",
+      "nowcast": "方向性が定まっていない。",
+      "overall": "ラインが機能していない時点で判断不可。エントリーしない。"
+    }
+  },
+  {
+    "id": "Q021",
+    "title": "直近で反応していないラインに期待している",
+    "flow": {
+      "line": {
+        "question": "ライン有効？",
+        "correctAnswer": "no"
+      },
+      "nowcast": {
+        "question": "ナウキャストは？",
+        "options": ["Trend", "Range", "Transition"],
+        "correctAnswer": "Transition"
+      },
+      "scenario": {
+        "question": "シナリオ成立？",
+        "correctAnswer": "no"
+      },
+      "timing": {
+        "question": "タイミング来てる？",
+        "correctAnswer": "no"
+      },
+      "conclusion": {
+        "question": "結論は？",
+        "correctAnswer": "skip"
+      }
+    },
+    "explanation": {
+      "line": "過去に反応した水平ラインがあるが、直近数回はスルーされている。直近で機能していないラインは根拠が弱い。反応の再現性が確認できない。",
+      "overall": "ラインが有効か否かが曖昧なら、その後の判断は成立しない。昔効いたという記憶でラインを信仰するのは誤り。根拠の薄いラインでシナリオを組むのは誤り。"
+    }
+  },
+  {
+    "id": "Q022",
+    "title": "トレンドと思い込むが実態はレンジ",
+    "flow": {
+      "line": {
+        "question": "ライン有効？",
+        "correctAnswer": "yes"
+      },
+      "nowcast": {
+        "question": "ナウキャストは？",
+        "options": ["Trend", "Range", "Transition"],
+        "correctAnswer": "Range"
+      },
+      "scenario": {
+        "question": "シナリオ成立？",
+        "correctAnswer": "no"
+      },
+      "timing": {
+        "question": "タイミング来てる？",
+        "correctAnswer": "no"
+      },
+      "conclusion": {
+        "question": "結論は？",
+        "correctAnswer": "skip"
+      }
+    },
+    "explanation": {
+      "line": "ラインは有効。",
+      "nowcast": "短期で上げ下げが続き、高値も安値も更新できずに往復している。高値安値を更新できない往復はレンジ。順張りは損切り貧乏になりやすい局面。",
+      "overall": "ナウキャストを誤ると戦術が逆になる。直近の勢いだけ見てトレンドと決めつけるのは誤り。レンジ上限下限を見ずに追いかけるのは誤り。"
+    }
+  },
+  {
+    "id": "Q023",
+    "title": "否定条件が曖昧で撤退ルールがない",
+    "flow": {
+      "line": {
+        "question": "ライン有効？",
+        "correctAnswer": "yes"
+      },
+      "nowcast": {
+        "question": "ナウキャストは？",
+        "options": ["Trend", "Range", "Transition"],
+        "correctAnswer": "Transition"
+      },
+      "scenario": {
+        "question": "シナリオ成立？",
+        "correctAnswer": "no"
+      },
+      "timing": {
+        "question": "タイミング来てる？",
+        "correctAnswer": "no"
+      },
+      "conclusion": {
+        "question": "結論は？",
+        "correctAnswer": "skip"
+      }
+    },
+    "explanation": {
+      "line": "ラインは有効。",
+      "scenario": "エントリー条件は語れるが、この条件なら撤退が数値化されていない。否定条件なし＝損切りが感情頼みになる。再現性より都合の良い解釈が勝つ。",
+      "overall": "シナリオはやらない条件が先に要る。入る理由だけ集めて、否定を作らないのは誤り。損切りが毎回違うのは誤り。"
+    }
+  },
+  {
+    "id": "Q024",
+    "title": "シナリオ成立だがタイミングは未到来",
+    "flow": {
+      "line": {
+        "question": "ライン有効？",
+        "correctAnswer": "yes"
+      },
+      "nowcast": {
+        "question": "ナウキャストは？",
+        "options": ["Trend", "Range", "Transition"],
+        "correctAnswer": "Trend"
+      },
+      "scenario": {
+        "question": "シナリオ成立？",
+        "correctAnswer": "yes"
+      },
+      "timing": {
+        "question": "タイミング来てる？",
+        "correctAnswer": "no"
+      },
+      "conclusion": {
+        "question": "結論は？",
+        "correctAnswer": "skip"
+      }
+    },
+    "explanation": {
+      "line": "ラインは有効。",
+      "nowcast": "トレンドが継続している。",
+      "scenario": "シナリオは成立している。",
+      "timing": "戻りを待つシナリオだが、戻りがまだ浅い。戻り待ちは戻った事実が必要。浅い戻りは追随の押し目に見えても再現性が薄い。",
+      "overall": "タイミングは最後。最後で止まれるかが勝負。置いていかれる恐怖で早入りするのは誤り。タイミング条件を曖昧にするのは誤り。"
+    }
+  },
+  {
+    "id": "Q025",
+    "title": "ラインがローソク実体で明確に割れている",
+    "flow": {
+      "line": {
+        "question": "ライン有効？",
+        "correctAnswer": "no"
+      },
+      "nowcast": {
+        "question": "ナウキャストは？",
+        "options": ["Trend", "Range", "Transition"],
+        "correctAnswer": "Transition"
+      },
+      "scenario": {
+        "question": "シナリオ成立？",
+        "correctAnswer": "no"
+      },
+      "timing": {
+        "question": "タイミング来てる？",
+        "correctAnswer": "no"
+      },
+      "conclusion": {
+        "question": "結論は？",
+        "correctAnswer": "skip"
+      }
+    },
+    "explanation": {
+      "line": "反発を期待するラインがあるが、直近で実体が明確に割れて確定している。実体割れ確定は反発ラインとしての根拠を壊す。割れ後は役割転換（レジサポ転換）確認が必要。",
+      "overall": "ライン前提が崩れているなら、以降の判断は無効。ヒゲだけ見てまだ効いてると解釈するのは誤り。割れ確定を無視して逆張りするのは誤り。"
+    }
+  },
+  {
+    "id": "Q026",
+    "title": "移行期で方向が決まっていない",
+    "flow": {
+      "line": {
+        "question": "ライン有効？",
+        "correctAnswer": "yes"
+      },
+      "nowcast": {
+        "question": "ナウキャストは？",
+        "options": ["Trend", "Range", "Transition"],
+        "correctAnswer": "Transition"
+      },
+      "scenario": {
+        "question": "シナリオ成立？",
+        "correctAnswer": "no"
+      },
+      "timing": {
+        "question": "タイミング来てる？",
+        "correctAnswer": "no"
+      },
+      "conclusion": {
+        "question": "結論は？",
+        "correctAnswer": "skip"
+      }
+    },
+    "explanation": {
+      "line": "ラインは有効。",
+      "nowcast": "高値切り下げ・安値切り上げで収束している。収束はブレイク待ちで期待値が読みにくい。抜け方向の確認前はシナリオが片肺になりやすい。",
+      "overall": "移行期は待つが基本。方向確定が先。収束中にどっちか当てに行くのは誤り。根拠を増やして正当化するのは誤り。"
+    }
+  },
+  {
+    "id": "Q027",
+    "title": "上位足の否定が存在する",
+    "flow": {
+      "line": {
+        "question": "ライン有効？",
+        "correctAnswer": "yes"
+      },
+      "nowcast": {
+        "question": "ナウキャストは？",
+        "options": ["Trend", "Range", "Transition"],
+        "correctAnswer": "Trend"
+      },
+      "scenario": {
+        "question": "シナリオ成立？",
+        "correctAnswer": "no"
+      },
+      "timing": {
+        "question": "タイミング来てる？",
+        "correctAnswer": "no"
+      },
+      "conclusion": {
+        "question": "結論は？",
+        "correctAnswer": "skip"
+      }
+    },
+    "explanation": {
+      "line": "ラインは有効。",
+      "nowcast": "トレンドが継続している。",
+      "scenario": "下位足では買いシナリオが見えるが、上位足は強い戻り売りポイント直下で否定要素が強い。上位足の抵抗直下は期待値が下がる。下位足の形が良くても場所で負ける。",
+      "overall": "シナリオは上位足の否定に負ける。下位足だけ見て押し目買いを決めるのは誤り。上位足の否定を今回は例外にするのは誤り。"
+    }
+  },
+  {
+    "id": "Q028",
+    "title": "確定足を待てば条件崩壊する可能性がある",
+    "flow": {
+      "line": {
+        "question": "ライン有効？",
+        "correctAnswer": "yes"
+      },
+      "nowcast": {
+        "question": "ナウキャストは？",
+        "options": ["Trend", "Range", "Transition"],
+        "correctAnswer": "Transition"
+      },
+      "scenario": {
+        "question": "シナリオ成立？",
+        "correctAnswer": "no"
+      },
+      "timing": {
+        "question": "タイミング来てる？",
+        "correctAnswer": "no"
+      },
+      "conclusion": {
+        "question": "結論は？",
+        "correctAnswer": "skip"
+      }
+    },
+    "explanation": {
+      "line": "ラインは有効。",
+      "timing": "今入れば良さそうだが、足確定まで待つと形が崩れる可能性がある。確定前は情報が未完成。確定で崩れる＝そもそも条件が弱い。",
+      "overall": "確定待ちで崩れるなら、その根拠は脆い。確定待つと逃すを正当化して早入りするのは誤り。"
+    }
+  },
+  {
+    "id": "Q029",
+    "title": "ラインではなく帯で捉えるべき局面",
+    "flow": {
+      "line": {
+        "question": "ライン有効？",
+        "correctAnswer": "yes"
+      },
+      "nowcast": {
+        "question": "ナウキャストは？",
+        "options": ["Trend", "Range", "Transition"],
+        "correctAnswer": "Range"
+      },
+      "scenario": {
+        "question": "シナリオ成立？",
+        "correctAnswer": "no"
+      },
+      "timing": {
+        "question": "タイミング来てる？",
+        "correctAnswer": "no"
+      },
+      "conclusion": {
+        "question": "結論は？",
+        "correctAnswer": "skip"
+      }
+    },
+    "explanation": {
+      "line": "一点のラインにこだわっているが、過去の反応は少し幅を持っている。反応帯があるなら点での精密さは逆に事故る。帯の中でどの条件で入るかが必要。",
+      "nowcast": "レンジ相場が継続している。",
+      "overall": "ラインの定義がズレると、全判断がブレる。1本の線に執着して根拠を歪めるのは誤り。帯の下限上限を決めずに入るのは誤り。"
+    }
+  },
+  {
+    "id": "Q030",
+    "title": "急伸直後はトレンド継続ではなく警戒",
+    "flow": {
+      "line": {
+        "question": "ライン有効？",
+        "correctAnswer": "yes"
+      },
+      "nowcast": {
+        "question": "ナウキャストは？",
+        "options": ["Trend", "Range", "Transition"],
+        "correctAnswer": "Trend"
+      },
+      "scenario": {
+        "question": "シナリオ成立？",
+        "correctAnswer": "no"
+      },
+      "timing": {
+        "question": "タイミング来てる？",
+        "correctAnswer": "no"
+      },
+      "conclusion": {
+        "question": "結論は？",
+        "correctAnswer": "skip"
+      }
+    },
+    "explanation": {
+      "line": "ラインは有効。",
+      "nowcast": "強い上昇が出た直後で、追随買いをしたくなる。だが直近は過熱している。急伸直後は利確・調整が起きやすい。押し目/戻りの条件がないと再現性がない。",
+      "overall": "ナウキャストがTRENDでも局面は別。追いかけは戦術ミス。勢いだけでエントリーするのは誤り。押し目条件を省略するのは誤り。"
+    }
+  },
+  {
+    "id": "Q031",
+    "title": "シナリオが結果依存になっている",
+    "flow": {
+      "line": {
+        "question": "ライン有効？",
+        "correctAnswer": "no"
+      },
+      "nowcast": {
+        "question": "ナウキャストは？",
+        "options": ["Trend", "Range", "Transition"],
+        "correctAnswer": "Transition"
+      },
+      "scenario": {
+        "question": "シナリオ成立？",
+        "correctAnswer": "no"
+      },
+      "timing": {
+        "question": "タイミング来てる？",
+        "correctAnswer": "no"
+      },
+      "conclusion": {
+        "question": "結論は？",
+        "correctAnswer": "skip"
+      }
+    },
+    "explanation": {
+      "scenario": "価格が上がったら買い、下がったら売り、のように条件が事後的で固定されていない。条件が固定されないと検証不能。勝っても負けても学びが残らない。",
+      "overall": "事後条件はシナリオではない。判断の再現ができない。上がったら買うの追随癖は誤り。シナリオを言語化せず雰囲気で入るのは誤り。"
+    }
+  },
+  {
+    "id": "Q032",
+    "title": "タイミング条件が気分になっている",
+    "flow": {
+      "line": {
+        "question": "ライン有効？",
+        "correctAnswer": "yes"
+      },
+      "nowcast": {
+        "question": "ナウキャストは？",
+        "options": ["Trend", "Range", "Transition"],
+        "correctAnswer": "Transition"
+      },
+      "scenario": {
+        "question": "シナリオ成立？",
+        "correctAnswer": "no"
+      },
+      "timing": {
+        "question": "タイミング来てる？",
+        "correctAnswer": "no"
+      },
+      "conclusion": {
+        "question": "結論は？",
+        "correctAnswer": "skip"
+      }
+    },
+    "explanation": {
+      "line": "ラインは有効。",
+      "timing": "タイミングの定義がなんとなく来た気がするになっている。タイミング条件が言語化できない＝再現不能。気分は検証できない。",
+      "overall": "タイミングは最後だが、最後が曖昧だと全て崩壊する。根拠を積んだ気になって最後を曖昧にするのは誤り。"
+    }
+  },
+  {
+    "id": "Q033",
+    "title": "反発根拠がヒゲ一本しかない",
+    "flow": {
+      "line": {
+        "question": "ライン有効？",
+        "correctAnswer": "no"
+      },
+      "nowcast": {
+        "question": "ナウキャストは？",
+        "options": ["Trend", "Range", "Transition"],
+        "correctAnswer": "Transition"
+      },
+      "scenario": {
+        "question": "シナリオ成立？",
+        "correctAnswer": "no"
+      },
+      "timing": {
+        "question": "タイミング来てる？",
+        "correctAnswer": "no"
+      },
+      "conclusion": {
+        "question": "結論は？",
+        "correctAnswer": "skip"
+      }
+    },
+    "explanation": {
+      "line": "ライン付近でヒゲ反発が一度出ただけ。次の足で再テストもなく、すぐ入りたくなっている。単発ヒゲはノイズの可能性が高い。再テストや複数反応がないと再現性が薄い。",
+      "overall": "ライン有効の確認が不足しているなら止める。ヒゲ＝反転確定と誤認するのは誤り。"
+    }
+  },
+  {
+    "id": "Q034",
+    "title": "レンジの中央で仕掛けようとしている",
+    "flow": {
+      "line": {
+        "question": "ライン有効？",
+        "correctAnswer": "no"
+      },
+      "nowcast": {
+        "question": "ナウキャストは？",
+        "options": ["Trend", "Range", "Transition"],
+        "correctAnswer": "Range"
+      },
+      "scenario": {
+        "question": "シナリオ成立？",
+        "correctAnswer": "no"
+      },
+      "timing": {
+        "question": "タイミング来てる？",
+        "correctAnswer": "no"
+      },
+      "conclusion": {
+        "question": "結論は？",
+        "correctAnswer": "skip"
+      }
+    },
+    "explanation": {
+      "nowcast": "レンジ相場だが、上限でも下限でもない中央付近でエントリーしたくなっている。損切り位置が不利になりやすい。優位性がレンジ端に比べて薄い。",
+      "overall": "レンジの中央は場所として弱く、シナリオが成立しにくい。中央でどっちかに伸びるを期待するのは誤り。"
+    }
+  },
+  {
+    "id": "Q035",
+    "title": "シナリオ成立条件が複雑すぎる",
+    "flow": {
+      "line": {
+        "question": "ライン有効？",
+        "correctAnswer": "no"
+      },
+      "nowcast": {
+        "question": "ナウキャストは？",
+        "options": ["Trend", "Range", "Transition"],
+        "correctAnswer": "Transition"
+      },
+      "scenario": {
+        "question": "シナリオ成立？",
+        "correctAnswer": "no"
+      },
+      "timing": {
+        "question": "タイミング来てる？",
+        "correctAnswer": "no"
+      },
+      "conclusion": {
+        "question": "結論は？",
+        "correctAnswer": "skip"
+      }
+    },
+    "explanation": {
+      "scenario": "条件が多段で複雑になり、毎回解釈が変わる。条件が多いほど都合よく解釈できる。検証・反復ができなくなる。",
+      "overall": "複雑＝精度ではない。再現性が落ちる。負けを防ぐために条件を足し続けるのは誤り。"
+    }
+  },
+  {
+    "id": "Q036",
+    "title": "タイミングが来る前に指値を置いている",
+    "flow": {
+      "line": {
+        "question": "ライン有効？",
+        "correctAnswer": "yes"
+      },
+      "nowcast": {
+        "question": "ナウキャストは？",
+        "options": ["Trend", "Range", "Transition"],
+        "correctAnswer": "Trend"
+      },
+      "scenario": {
+        "question": "シナリオ成立？",
+        "correctAnswer": "yes"
+      },
+      "timing": {
+        "question": "タイミング来てる？",
+        "correctAnswer": "no"
+      },
+      "conclusion": {
+        "question": "結論は？",
+        "correctAnswer": "skip"
+      }
+    },
+    "explanation": {
+      "line": "ラインは有効。",
+      "nowcast": "トレンドが継続している。",
+      "scenario": "シナリオは成立している。",
+      "timing": "来たら入るのはずが、形が出る前に指値を置いてしまっている。指値は条件未成立でも刺さる。条件のないエントリーは再現性がない。",
+      "overall": "タイミング条件が発生してから実行が基本。忙しいからを理由に条件を省略するのは誤り。"
+    }
+  },
+  {
+    "id": "Q037",
+    "title": "ラインは有効だがナウキャストが不一致",
+    "flow": {
+      "line": {
+        "question": "ライン有効？",
+        "correctAnswer": "yes"
+      },
+      "nowcast": {
+        "question": "ナウキャストは？",
+        "options": ["Trend", "Range", "Transition"],
+        "correctAnswer": "Range"
+      },
+      "scenario": {
+        "question": "シナリオ成立？",
+        "correctAnswer": "no"
+      },
+      "timing": {
+        "question": "タイミング来てる？",
+        "correctAnswer": "no"
+      },
+      "conclusion": {
+        "question": "結論は？",
+        "correctAnswer": "skip"
+      }
+    },
+    "explanation": {
+      "line": "ラインは有効。",
+      "nowcast": "下位足では反発ラインに見えるが、上位足はレンジ中央付近で方向感がない。レンジ中央は反発しても伸びにくい。上位足の局面が取りに行く相場ではない。",
+      "overall": "ライン有効でも、ナウキャスト不一致なら期待値が落ちる。下位足の反応だけで入るのは誤り。上位足の局面を無視するのは誤り。"
+    }
+  },
+  {
+    "id": "Q038",
+    "title": "シナリオ成立だが否定シナリオ優勢",
+    "flow": {
+      "line": {
+        "question": "ライン有効？",
+        "correctAnswer": "yes"
+      },
+      "nowcast": {
+        "question": "ナウキャストは？",
+        "options": ["Trend", "Range", "Transition"],
+        "correctAnswer": "Transition"
+      },
+      "scenario": {
+        "question": "シナリオ成立？",
+        "correctAnswer": "no"
+      },
+      "timing": {
+        "question": "タイミング来てる？",
+        "correctAnswer": "no"
+      },
+      "conclusion": {
+        "question": "結論は？",
+        "correctAnswer": "skip"
+      }
+    },
+    "explanation": {
+      "line": "ラインは有効。",
+      "nowcast": "移行期で方向性が定まっていない。",
+      "scenario": "買いシナリオは成立しているように見えるが、同時に否定の動き（勢いの反対）が優勢で迷う局面。移行期は否定が出やすい。優勢側に乗るか、確定まで待つのが合理的。",
+      "overall": "否定が優勢なら、成立とみなさない判断が再現性を守る。両方見えているのに都合の良い方だけ採用するのは誤り。"
+    }
+  },
+  {
+    "id": "Q039",
+    "title": "タイミングだけ取りに行く典型",
+    "flow": {
+      "line": {
+        "question": "ライン有効？",
+        "correctAnswer": "no"
+      },
+      "nowcast": {
+        "question": "ナウキャストは？",
+        "options": ["Trend", "Range", "Transition"],
+        "correctAnswer": "Transition"
+      },
+      "scenario": {
+        "question": "シナリオ成立？",
+        "correctAnswer": "no"
+      },
+      "timing": {
+        "question": "タイミング来てる？",
+        "correctAnswer": "yes"
+      },
+      "conclusion": {
+        "question": "結論は？",
+        "correctAnswer": "skip"
+      }
+    },
+    "explanation": {
+      "line": "ラインが弱い。",
+      "nowcast": "ナウキャストも曖昧。",
+      "timing": "タイミングの形は良いが、ラインが弱く、ナウキャストも曖昧で、シナリオが薄い。タイミング単体は再現性が低い。場所と局面がないと期待値が出ない。",
+      "overall": "タイミングは最後。前提が薄いなら入らない。形が出たからだけで入るのは誤り。"
+    }
+  },
+  {
+    "id": "Q040",
+    "title": "条件は揃うが利確余地が薄い",
+    "flow": {
+      "line": {
+        "question": "ライン有効？",
+        "correctAnswer": "yes"
+      },
+      "nowcast": {
+        "question": "ナウキャストは？",
+        "options": ["Trend", "Range", "Transition"],
+        "correctAnswer": "Range"
+      },
+      "scenario": {
+        "question": "シナリオ成立？",
+        "correctAnswer": "no"
+      },
+      "timing": {
+        "question": "タイミング来てる？",
+        "correctAnswer": "no"
+      },
+      "conclusion": {
+        "question": "結論は？",
+        "correctAnswer": "skip"
+      }
+    },
+    "explanation": {
+      "line": "ラインは有効。",
+      "nowcast": "レンジ相場が継続している。",
+      "scenario": "エントリー条件は揃っているが、すぐ上に強い抵抗があり伸びしろが小さい。すぐ上の抵抗で伸び止まりやすい。損切りに対して利確が小さいと不利。",
+      "overall": "シナリオ成立には伸びる余地も含める。条件一致だけで期待値を確認しないのは誤り。"
+    }
+  },
+  {
+    "id": "Q041",
+    "title": "斜めラインに依存して水平の優先度が低い",
+    "flow": {
+      "line": {
+        "question": "ライン有効？",
+        "correctAnswer": "no"
+      },
+      "nowcast": {
+        "question": "ナウキャストは？",
+        "options": ["Trend", "Range", "Transition"],
+        "correctAnswer": "Transition"
+      },
+      "scenario": {
+        "question": "シナリオ成立？",
+        "correctAnswer": "no"
+      },
+      "timing": {
+        "question": "タイミング来てる？",
+        "correctAnswer": "no"
+      },
+      "conclusion": {
+        "question": "結論は？",
+        "correctAnswer": "skip"
+      }
+    },
+    "explanation": {
+      "line": "斜めのトレンドラインを主根拠にしているが、水平の節目が近く反応が散っている。水平節目の方が反応の再現性が高いことが多い。斜めラインは引き方のブレが大きい。",
+      "overall": "ラインの優先順位が誤ると場所が崩れる。斜めラインを万能視するのは誤り。"
+    }
+  },
+  {
+    "id": "Q042",
+    "title": "戻りの浅さが継続か過熱か判別できていない",
+    "flow": {
+      "line": {
+        "question": "ライン有効？",
+        "correctAnswer": "no"
+      },
+      "nowcast": {
+        "question": "ナウキャストは？",
+        "options": ["Trend", "Range", "Transition"],
+        "correctAnswer": "Transition"
+      },
+      "scenario": {
+        "question": "シナリオ成立？",
+        "correctAnswer": "no"
+      },
+      "timing": {
+        "question": "タイミング来てる？",
+        "correctAnswer": "no"
+      },
+      "conclusion": {
+        "question": "結論は？",
+        "correctAnswer": "skip"
+      }
+    },
+    "explanation": {
+      "nowcast": "戻りが浅く勢いがある。継続に見えるが過熱にも見える。局面の判別が曖昧＝戦術が決まらない。曖昧さは再現性を壊す。",
+      "overall": "ナウキャストが確定しないなら、シナリオを組まない。都合よく継続だけ採用して追うのは誤り。"
+    }
+  },
+  {
+    "id": "Q043",
+    "title": "シナリオの前提がニュース待ちで不安定",
+    "flow": {
+      "line": {
+        "question": "ライン有効？",
+        "correctAnswer": "no"
+      },
+      "nowcast": {
+        "question": "ナウキャストは？",
+        "options": ["Trend", "Range", "Transition"],
+        "correctAnswer": "Transition"
+      },
+      "scenario": {
+        "question": "シナリオ成立？",
+        "correctAnswer": "no"
+      },
+      "timing": {
+        "question": "タイミング来てる？",
+        "correctAnswer": "no"
+      },
+      "conclusion": {
+        "question": "結論は？",
+        "correctAnswer": "skip"
+      }
+    },
+    "explanation": {
+      "scenario": "重要イベント前後で値動きが不安定。シナリオを固定しても前提が崩れやすい。イベント前後は構造が崩れやすい。再現性より偶然が勝つ。",
+      "overall": "前提が不安定なら、シナリオ自体が成立しない。どうせ動くで入るのは誤り。損切りが飛ぶリスクを軽視するのは誤り。"
+    }
+  },
+  {
+    "id": "Q044",
+    "title": "タイミングは来たが場所が違う",
+    "flow": {
+      "line": {
+        "question": "ライン有効？",
+        "correctAnswer": "no"
+      },
+      "nowcast": {
+        "question": "ナウキャストは？",
+        "options": ["Trend", "Range", "Transition"],
+        "correctAnswer": "Transition"
+      },
+      "scenario": {
+        "question": "シナリオ成立？",
+        "correctAnswer": "no"
+      },
+      "timing": {
+        "question": "タイミング来てる？",
+        "correctAnswer": "yes"
+      },
+      "conclusion": {
+        "question": "結論は？",
+        "correctAnswer": "skip"
+      }
+    },
+    "explanation": {
+      "line": "ライン帯の外で発生している。",
+      "timing": "反転っぽい形が出たが、ライン帯の外で発生している。反転形はどこでも出る。ライン帯で起きて初めて意味がある。",
+      "overall": "場所が先。場所外のタイミングは期待値が出ない。形だけで条件一致と誤認するのは誤り。"
+    }
+  },
+  {
+    "id": "Q045",
+    "title": "レンジ上限で抜け期待を先取りしている",
+    "flow": {
+      "line": {
+        "question": "ライン有効？",
+        "correctAnswer": "yes"
+      },
+      "nowcast": {
+        "question": "ナウキャストは？",
+        "options": ["Trend", "Range", "Transition"],
+        "correctAnswer": "Range"
+      },
+      "scenario": {
+        "question": "シナリオ成立？",
+        "correctAnswer": "no"
+      },
+      "timing": {
+        "question": "タイミング来てる？",
+        "correctAnswer": "no"
+      },
+      "conclusion": {
+        "question": "結論は？",
+        "correctAnswer": "skip"
+      }
+    },
+    "explanation": {
+      "line": "ラインは有効。",
+      "nowcast": "レンジ上限付近。抜けたら強いと期待して、抜け確定前に買ってしまいそう。レンジ上限は反発が起きやすい。抜け期待の先取りは逆行しやすい。",
+      "overall": "ナウキャストがレンジなら、抜けは確定してからが基本。ブレイクアウトを当てに行くのは誤り。確定条件を省略するのは誤り。"
+    }
+  },
+  {
+    "id": "Q046",
+    "title": "トレンド継続だが戻りが深すぎる",
+    "flow": {
+      "line": {
+        "question": "ライン有効？",
+        "correctAnswer": "yes"
+      },
+      "nowcast": {
+        "question": "ナウキャストは？",
+        "options": ["Trend", "Range", "Transition"],
+        "correctAnswer": "Transition"
+      },
+      "scenario": {
+        "question": "シナリオ成立？",
+        "correctAnswer": "no"
+      },
+      "timing": {
+        "question": "タイミング来てる？",
+        "correctAnswer": "no"
+      },
+      "conclusion": {
+        "question": "結論は？",
+        "correctAnswer": "skip"
+      }
+    },
+    "explanation": {
+      "line": "ラインは有効。",
+      "nowcast": "トレンド中だが戻りが深く、継続より転換リスクが増している。深い戻りは構造転換の兆候になり得る。継続の根拠が弱いなら待つ。",
+      "overall": "深い戻りはナウキャストをTRENDからTRANSITIONに寄せる。トレンドだからで押し目認定するのは誤り。"
+    }
+  },
+  {
+    "id": "Q047",
+    "title": "シナリオ成立の定義が後出しになっている",
+    "flow": {
+      "line": {
+        "question": "ライン有効？",
+        "correctAnswer": "no"
+      },
+      "nowcast": {
+        "question": "ナウキャストは？",
+        "options": ["Trend", "Range", "Transition"],
+        "correctAnswer": "Transition"
+      },
+      "scenario": {
+        "question": "シナリオ成立？",
+        "correctAnswer": "no"
+      },
+      "timing": {
+        "question": "タイミング来てる？",
+        "correctAnswer": "no"
+      },
+      "conclusion": {
+        "question": "結論は？",
+        "correctAnswer": "skip"
+      }
+    },
+    "explanation": {
+      "scenario": "最初は見送りと言っていたが、少し動いたらやっぱり成立と解釈を変えてしまう。条件が固定されないと反復学習ができない。勝っても負けても検証不能になる。",
+      "overall": "解釈が動く時点でシナリオではない。相場に合わせて条件を変えるのは誤り。"
+    }
+  },
+  {
+    "id": "Q048",
+    "title": "タイミングは来たが否定条件も同時成立",
+    "flow": {
+      "line": {
+        "question": "ライン有効？",
+        "correctAnswer": "yes"
+      },
+      "nowcast": {
+        "question": "ナウキャストは？",
+        "options": ["Trend", "Range", "Transition"],
+        "correctAnswer": "Transition"
+      },
+      "scenario": {
+        "question": "シナリオ成立？",
+        "correctAnswer": "no"
+      },
+      "timing": {
+        "question": "タイミング来てる？",
+        "correctAnswer": "no"
+      },
+      "conclusion": {
+        "question": "結論は？",
+        "correctAnswer": "skip"
+      }
+    },
+    "explanation": {
+      "line": "ラインは有効。",
+      "nowcast": "移行期で方向性が定まっていない。",
+      "scenario": "入れそうな形が出たが、同時に否定条件（反対の勢い・割れ）が出ている。移行期はダマシが増える。否定が強いなら一度見送るのが合理的。",
+      "overall": "否定が同時成立するなら、成立とみなさない方が再現性が高い。都合の良い要素だけ拾うのは誤り。"
+    }
+  },
+  {
+    "id": "Q049",
+    "title": "直近の反応はあるが一度も再テストしていない",
+    "flow": {
+      "line": {
+        "question": "ライン有効？",
+        "correctAnswer": "no"
+      },
+      "nowcast": {
+        "question": "ナウキャストは？",
+        "options": ["Trend", "Range", "Transition"],
+        "correctAnswer": "Transition"
+      },
+      "scenario": {
+        "question": "シナリオ成立？",
+        "correctAnswer": "no"
+      },
+      "timing": {
+        "question": "タイミング来てる？",
+        "correctAnswer": "no"
+      },
+      "conclusion": {
+        "question": "結論は？",
+        "correctAnswer": "skip"
+      }
+    },
+    "explanation": {
+      "line": "ラインで一度反応したが、再テストがない。再テストがないと反応の再現性が薄い。単発反応は偶然の可能性がある。",
+      "overall": "ライン有効の確認不足はシナリオの土台が弱い。一度反応した＝次も反応すると思うのは誤り。"
+    }
+  },
+  {
+    "id": "Q050",
+    "title": "高値更新しているが伸びが弱い",
+    "flow": {
+      "line": {
+        "question": "ライン有効？",
+        "correctAnswer": "yes"
+      },
+      "nowcast": {
+        "question": "ナウキャストは？",
+        "options": ["Trend", "Range", "Transition"],
+        "correctAnswer": "Transition"
+      },
+      "scenario": {
+        "question": "シナリオ成立？",
+        "correctAnswer": "no"
+      },
+      "timing": {
+        "question": "タイミング来てる？",
+        "correctAnswer": "no"
+      },
+      "conclusion": {
+        "question": "結論は？",
+        "correctAnswer": "skip"
+      }
+    },
+    "explanation": {
+      "line": "ラインは有効。",
+      "nowcast": "一応高値更新はしているが、更新幅が小さく失速が目立つ。更新幅が小さい＝勢い低下の兆候。失速が目立つなら転換リスクが増える。",
+      "overall": "高値更新だけでTREND固定にしない。質を見る。更新してるからトレンドで思考停止するのは誤り。"
+    }
+  },
+  {
+    "id": "Q051",
+    "title": "損切り位置が構造に紐づいていない",
+    "flow": {
+      "line": {
+        "question": "ライン有効？",
+        "correctAnswer": "no"
+      },
+      "nowcast": {
+        "question": "ナウキャストは？",
+        "options": ["Trend", "Range", "Transition"],
+        "correctAnswer": "Transition"
+      },
+      "scenario": {
+        "question": "シナリオ成立？",
+        "correctAnswer": "no"
+      },
+      "timing": {
+        "question": "タイミング来てる？",
+        "correctAnswer": "no"
+      },
+      "conclusion": {
+        "question": "結論は？",
+        "correctAnswer": "skip"
+      }
+    },
+    "explanation": {
+      "scenario": "損切りは適当に○pipsで決めており、構造（否定）と一致していない。構造否定で切れないと負けが膨らむ。固定pipsは相場状況で機能が変わる。",
+      "overall": "シナリオの否定＝損切り。構造と紐づかなければ成立しない。損切りを痛くない幅で決めるのは誤り。"
+    }
+  },
+  {
+    "id": "Q052",
+    "title": "タイミング条件を次の足に持ち越している",
+    "flow": {
+      "line": {
+        "question": "ライン有効？",
+        "correctAnswer": "yes"
+      },
+      "nowcast": {
+        "question": "ナウキャストは？",
+        "options": ["Trend", "Range", "Transition"],
+        "correctAnswer": "Transition"
+      },
+      "scenario": {
+        "question": "シナリオ成立？",
+        "correctAnswer": "no"
+      },
+      "timing": {
+        "question": "タイミング来てる？",
+        "correctAnswer": "no"
+      },
+      "conclusion": {
+        "question": "結論は？",
+        "correctAnswer": "skip"
+      }
+    },
+    "explanation": {
+      "line": "ラインは有効。",
+      "timing": "タイミングが来たと思ったが入れず、次の足でもまだ同じとして入ろうとしている。タイミングは発生した瞬間の条件一致。次足では前提が変わっている可能性が高い。",
+      "overall": "タイミングは鮮度が命。持ち越しは条件劣化になりやすい。逃した後に取り返すために追うのは誤り。"
+    }
+  },
+  {
+    "id": "Q053",
+    "title": "上位足ラインは有効だが下位足が荒れている",
+    "flow": {
+      "line": {
+        "question": "ライン有効？",
+        "correctAnswer": "yes"
+      },
+      "nowcast": {
+        "question": "ナウキャストは？",
+        "options": ["Trend", "Range", "Transition"],
+        "correctAnswer": "Transition"
+      },
+      "scenario": {
+        "question": "シナリオ成立？",
+        "correctAnswer": "no"
+      },
+      "timing": {
+        "question": "タイミング来てる？",
+        "correctAnswer": "no"
+      },
+      "conclusion": {
+        "question": "結論は？",
+        "correctAnswer": "skip"
+      }
+    },
+    "explanation": {
+      "line": "ラインは有効。",
+      "nowcast": "上位足の節目ではあるが、下位足は乱高下で方向が定まらず、タイミングが作れない。下位足が荒い＝再現性が落ちる。移行期はダマシが増える。",
+      "overall": "場所が良くても、タイミングが作れないなら見送る。場所が良いから無理に入るのは誤り。"
+    }
+  },
+  {
+    "id": "Q054",
+    "title": "レンジ下限で反発したが出口上限が遠いを確認していない",
+    "flow": {
+      "line": {
+        "question": "ライン有効？",
+        "correctAnswer": "yes"
+      },
+      "nowcast": {
+        "question": "ナウキャストは？",
+        "options": ["Trend", "Range", "Transition"],
+        "correctAnswer": "Range"
+      },
+      "scenario": {
+        "question": "シナリオ成立？",
+        "correctAnswer": "no"
+      },
+      "timing": {
+        "question": "タイミング来てる？",
+        "correctAnswer": "no"
+      },
+      "conclusion": {
+        "question": "結論は？",
+        "correctAnswer": "skip"
+      }
+    },
+    "explanation": {
+      "line": "ラインは有効。",
+      "nowcast": "レンジ相場が継続している。",
+      "scenario": "レンジ下限で反発形が出た。だが上限までの距離・障害物（中間抵抗）を確認していない。中間抵抗で止まりやすい。利確余地を定義できないと期待値が読めない。",
+      "overall": "シナリオ成立にはどこまで取りに行くかが必要。下限反発だけで上限まで行くと決めつけるのは誤り。"
+    }
+  },
+  {
+    "id": "Q055",
+    "title": "トレンド継続狙いだが戻りの形がない",
+    "flow": {
+      "line": {
+        "question": "ライン有効？",
+        "correctAnswer": "yes"
+      },
+      "nowcast": {
+        "question": "ナウキャストは？",
+        "options": ["Trend", "Range", "Transition"],
+        "correctAnswer": "Trend"
+      },
+      "scenario": {
+        "question": "シナリオ成立？",
+        "correctAnswer": "no"
+      },
+      "timing": {
+        "question": "タイミング来てる？",
+        "correctAnswer": "no"
+      },
+      "conclusion": {
+        "question": "結論は？",
+        "correctAnswer": "skip"
+      }
+    },
+    "explanation": {
+      "line": "ラインは有効。",
+      "nowcast": "トレンドが継続している。",
+      "scenario": "トレンド方向に乗りたいが、戻りの形が出ず、押し目の定義がない。戻りの形なし＝タイミングを作れない。追随は期待値が安定しにくい。",
+      "overall": "TRENDでも押し目の定義がないとシナリオが成立しない。トレンドならどこでも入って良いと思うのは誤り。"
+    }
+  },
+  {
+    "id": "Q056",
+    "title": "押し目候補だが割れたら即撤退が定義できる",
+    "flow": {
+      "line": {
+        "question": "ライン有効？",
+        "correctAnswer": "yes"
+      },
+      "nowcast": {
+        "question": "ナウキャストは？",
+        "options": ["Trend", "Range", "Transition"],
+        "correctAnswer": "Trend"
+      },
+      "scenario": {
+        "question": "シナリオ成立？",
+        "correctAnswer": "yes"
+      },
+      "timing": {
+        "question": "タイミング来てる？",
+        "correctAnswer": "no"
+      },
+      "conclusion": {
+        "question": "結論は？",
+        "correctAnswer": "skip"
+      }
+    },
+    "explanation": {
+      "line": "ライン帯は有効。",
+      "nowcast": "トレンドが継続している。",
+      "scenario": "押し目買い候補。否定は押し安値割れで明確。",
+      "timing": "だが足確定待ち。",
+      "overall": "シナリオは成立しているが、タイミング待ちが合理的。否定条件（押し安値割れ）が明確。成立しているからと確定前に入るのは誤り。"
+    }
+  },
+  {
+    "id": "Q057",
+    "title": "水平ラインは有効だが直下に別の強抵抗がある",
+    "flow": {
+      "line": {
+        "question": "ライン有効？",
+        "correctAnswer": "yes"
+      },
+      "nowcast": {
+        "question": "ナウキャストは？",
+        "options": ["Trend", "Range", "Transition"],
+        "correctAnswer": "Range"
+      },
+      "scenario": {
+        "question": "シナリオ成立？",
+        "correctAnswer": "no"
+      },
+      "timing": {
+        "question": "タイミング来てる？",
+        "correctAnswer": "no"
+      },
+      "conclusion": {
+        "question": "結論は？",
+        "correctAnswer": "skip"
+      }
+    },
+    "explanation": {
+      "line": "ラインは有効。",
+      "nowcast": "レンジ相場が継続している。",
+      "scenario": "エントリー予定のラインは有効に見える。ただし直下に強い抵抗（サポレジ）があり、値幅が狭い。障害物が近いと伸び余地が薄い。期待値が出にくい。",
+      "overall": "ライン単体でなく、近接する障害物まで含めて場所を評価する。ライン一致だけで入るのは誤り。"
+    }
+  },
+  {
+    "id": "Q058",
+    "title": "安値切り上げだが出来高的な確信がない局面",
+    "flow": {
+      "line": {
+        "question": "ライン有効？",
+        "correctAnswer": "no"
+      },
+      "nowcast": {
+        "question": "ナウキャストは？",
+        "options": ["Trend", "Range", "Transition"],
+        "correctAnswer": "Transition"
+      },
+      "scenario": {
+        "question": "シナリオ成立？",
+        "correctAnswer": "no"
+      },
+      "timing": {
+        "question": "タイミング来てる？",
+        "correctAnswer": "no"
+      },
+      "conclusion": {
+        "question": "結論は？",
+        "correctAnswer": "skip"
+      }
+    },
+    "explanation": {
+      "nowcast": "安値は切り上げているが、勢いの裏付けが薄く、どちらにも振れやすい。局面の定義が曖昧＝戦術が決まらない。曖昧さは負けの温床。",
+      "overall": "確信がない局面はUNKNOWNで止めるのが再現性を守る。切り上げてるから上と短絡するのは誤り。"
+    }
+  },
+  {
+    "id": "Q059",
+    "title": "条件が揃った時にやらない条件を言えない",
+    "flow": {
+      "line": {
+        "question": "ライン有効？",
+        "correctAnswer": "no"
+      },
+      "nowcast": {
+        "question": "ナウキャストは？",
+        "options": ["Trend", "Range", "Transition"],
+        "correctAnswer": "Transition"
+      },
+      "scenario": {
+        "question": "シナリオ成立？",
+        "correctAnswer": "no"
+      },
+      "timing": {
+        "question": "タイミング来てる？",
+        "correctAnswer": "no"
+      },
+      "conclusion": {
+        "question": "結論は？",
+        "correctAnswer": "skip"
+      }
+    },
+    "explanation": {
+      "scenario": "良さそうに見える場面で、やらない条件を即答できない。入る理由だけが先に出る。否定条件がないと損切りが曖昧になる。再現性が落ちる。",
+      "overall": "やらない条件が即答できないなら、シナリオが未完成。入る理由だけで判断するのは誤り。"
+    }
+  },
+  {
+    "id": "Q060",
+    "title": "エントリー後にタイミングを探している",
+    "flow": {
+      "line": {
+        "question": "ライン有効？",
+        "correctAnswer": "no"
+      },
+      "nowcast": {
+        "question": "ナウキャストは？",
+        "options": ["Trend", "Range", "Transition"],
+        "correctAnswer": "Transition"
+      },
+      "scenario": {
+        "question": "シナリオ成立？",
+        "correctAnswer": "no"
+      },
+      "timing": {
+        "question": "タイミング来てる？",
+        "correctAnswer": "no"
+      },
+      "conclusion": {
+        "question": "結論は？",
+        "correctAnswer": "skip"
+      }
+    },
+    "explanation": {
+      "timing": "すでに入ってからあの形がタイミングだったと後付けで説明している。タイミングは事前条件。後付けは学習にならない。",
+      "overall": "タイミングは事前条件。後付けは学習にならない。事後解釈は再現性を作れない。勝ち負けに関係なく悪癖が固定される。勝った時だけ根拠が生えるのは誤り。"
+    }
+  },
+  {
+    "id": "Q061",
+    "title": "ライン有効・シナリオ成立だがナウキャストが逆",
+    "flow": {
+      "line": {
+        "question": "ライン有効？",
+        "correctAnswer": "yes"
+      },
+      "nowcast": {
+        "question": "ナウキャストは？",
+        "options": ["Trend", "Range", "Transition"],
+        "correctAnswer": "Range"
+      },
+      "scenario": {
+        "question": "シナリオ成立？",
+        "correctAnswer": "no"
+      },
+      "timing": {
+        "question": "タイミング来てる？",
+        "correctAnswer": "no"
+      },
+      "conclusion": {
+        "question": "結論は？",
+        "correctAnswer": "skip"
+      }
+    },
+    "explanation": {
+      "line": "ラインは有効。",
+      "nowcast": "押し目買いを考えているが、実態はレンジで上限が近い。レンジ上限が近いと伸び余地が薄い。トレンド戦術をレンジで使うと事故る。",
+      "overall": "前提（ナウキャスト）が違うなら、シナリオを成立扱いにしない。局面を無視して型だけ当てはめるのは誤り。"
+    }
+  },
+  {
+    "id": "Q062",
+    "title": "見送りが正解：条件を満たすまでの待ち",
+    "flow": {
+      "line": {
+        "question": "ライン有効？",
+        "correctAnswer": "yes"
+      },
+      "nowcast": {
+        "question": "ナウキャストは？",
+        "options": ["Trend", "Range", "Transition"],
+        "correctAnswer": "Trend"
+      },
+      "scenario": {
+        "question": "シナリオ成立？",
+        "correctAnswer": "yes"
+      },
+      "timing": {
+        "question": "タイミング来てる？",
+        "correctAnswer": "no"
+      },
+      "conclusion": {
+        "question": "結論は？",
+        "correctAnswer": "skip"
+      }
+    },
+    "explanation": {
+      "line": "場所は良い。",
+      "nowcast": "ナウキャストも一致。",
+      "scenario": "シナリオも成立。",
+      "timing": "だがタイミング条件（確定形）がまだ出ていない。確定形が出て初めて再現性が担保される。早入りは勝っても癖になる。",
+      "overall": "最後の一歩を待てるかが型の完成度。条件が揃った気になって先に入るのは誤り。"
+    }
+  },
+  {
+    "id": "Q063",
+    "title": "入るべきではない：タイミングは来たが利確障害が目前",
+    "flow": {
+      "line": {
+        "question": "ライン有効？",
+        "correctAnswer": "yes"
+      },
+      "nowcast": {
+        "question": "ナウキャストは？",
+        "options": ["Trend", "Range", "Transition"],
+        "correctAnswer": "Range"
+      },
+      "scenario": {
+        "question": "シナリオ成立？",
+        "correctAnswer": "no"
+      },
+      "timing": {
+        "question": "タイミング来てる？",
+        "correctAnswer": "yes"
+      },
+      "conclusion": {
+        "question": "結論は？",
+        "correctAnswer": "skip"
+      }
+    },
+    "explanation": {
+      "line": "ラインは有効。",
+      "nowcast": "レンジ相場が継続している。",
+      "timing": "タイミング形は出たが、数pips先に強い抵抗があり、利確余地がほぼない。障害が近いと期待値が崩れる。損切りに対して利確が小さすぎる。",
+      "overall": "タイミングがあっても、シナリオ（期待値）が成立しないなら見送る。形が良いだけで入るのは誤り。"
+    }
+  },
+  {
+    "id": "Q064",
+    "title": "総合判断：全要素一致でも未確定なら待つ",
+    "flow": {
+      "line": {
+        "question": "ライン有効？",
+        "correctAnswer": "yes"
+      },
+      "nowcast": {
+        "question": "ナウキャストは？",
+        "options": ["Trend", "Range", "Transition"],
+        "correctAnswer": "Trend"
+      },
+      "scenario": {
+        "question": "シナリオ成立？",
+        "correctAnswer": "yes"
+      },
+      "timing": {
+        "question": "タイミング来てる？",
+        "correctAnswer": "no"
+      },
+      "conclusion": {
+        "question": "結論は？",
+        "correctAnswer": "skip"
+      }
+    },
+    "explanation": {
+      "line": "ライン帯OK。",
+      "nowcast": "ナウキャストOK。",
+      "scenario": "シナリオOK。",
+      "timing": "最後の確定を待つだけの局面。確定前は情報が変わる。ルールを破って勝つと悪癖が固定される。",
+      "overall": "最終局面で待つができると、型が崩れにくい。今回は行けるでルールを破るのは誤り。"
+    }
+  }
+]

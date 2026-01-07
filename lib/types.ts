@@ -8,10 +8,25 @@ export interface Lesson {
 }
 
 // Problem（問題）
+export interface ChartData {
+  type?: 'trend' | 'range' | 'transition';
+  line?: {
+    price: number;
+    touches?: number; // タッチ回数
+  };
+  priceAction?: {
+    high: number;
+    low: number;
+    close: number;
+    open: number;
+  }[];
+}
+
 export interface Problem {
   id: string;
   title?: string;
   chartImage?: string;
+  chartData?: ChartData; // チャートデータ（SVG生成用）
   flow: {
     line: {
       question: string;
