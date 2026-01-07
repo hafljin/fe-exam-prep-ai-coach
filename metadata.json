@@ -1,0 +1,5 @@
+{
+  "name": "FE Exam Prep AI Coach",
+  "description": "An AI-powered PWA to help you study for Japan's Fundamental Information Technology Engineer Examination (FE). Features personalized study plans, AI-generated quizzes, progress tracking, and pass probability prediction.",
+  "requestFramePermissions": []
+}
