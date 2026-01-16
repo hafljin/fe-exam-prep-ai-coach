@@ -1,10 +1,14 @@
 {
   "/_not-found/page": "app/_not-found/page.js",
-  "/settings/page": "app/settings/page.js",
-  "/lessons/page": "app/lessons/page.js",
-  "/problems/page": "app/problems/page.js",
-  "/lessons/[id]/page": "app/lessons/[id]/page.js",
-  "/problems/[id]/page": "app/problems/[id]/page.js",
   "/api/problems/[id]/route": "app/api/problems/[id]/route.js",
-  "/api/problems/route": "app/api/problems/route.js"
+  "/api/problems/route": "app/api/problems/route.js",
+  "/favorites/page": "app/favorites/page.js",
+  "/api/problems/random/route": "app/api/problems/random/route.js",
+  "/page": "app/page.js",
+  "/lessons/page": "app/lessons/page.js",
+  "/problems/[id]/page": "app/problems/[id]/page.js",
+  "/problems/page": "app/problems/page.js",
+  "/settings/page": "app/settings/page.js",
+  "/progress/page": "app/progress/page.js",
+  "/lessons/[id]/page": "app/lessons/[id]/page.js"
 }
